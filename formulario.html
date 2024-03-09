@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de Registro</h2>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <div>
+                <input type="text" id="name" placeholder="Nombres y Apellidos">
+                <div id="nameError" class="error"></div>
+            </div>
+            <div>
+                <input type="text" id="id" placeholder="Documento de Identidad">
+                <div id="nameError" class="error"></div>
+            </div>
+            <div>
+                <input type="email" id="email" placeholder="Correo Electrónico">
+                <div id="emailError" class="error"></div>
+            </div>
+            <div>
+                <input type="password" id="password" placeholder="Contraseña">
+                <div id="passwordError" class="error"></div>
+            </div>
+            <div>
+                <input type="password" id="password" placeholder="Confirme Contraseña">
+                <div id="passwordError" class="error"></div>
+            </div>
+            <input type="submit" value="Registrarse">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
